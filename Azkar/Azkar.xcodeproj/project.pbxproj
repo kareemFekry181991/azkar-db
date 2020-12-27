@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145048112598BEFF00513820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048102598BEFF00513820 /* AppDelegate.swift */; };
+		145048132598BEFF00513820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048122598BEFF00513820 /* SceneDelegate.swift */; };
+		145048152598BEFF00513820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048142598BEFF00513820 /* ViewController.swift */; };
+		145048182598BEFF00513820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145048162598BEFF00513820 /* Main.storyboard */; };
+		1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145048192598BEFF00513820 /* Azkar.xcdatamodeld */; };
+		1450481D2598BF0100513820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1450481C2598BF0100513820 /* Assets.xcassets */; };
+		145048202598BF0100513820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1450481E2598BF0100513820 /* LaunchScreen.storyboard */; };
+		1450482B2598BF0100513820 /* AzkarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450482A2598BF0100513820 /* AzkarTests.swift */; };
+		145048362598BF0100513820 /* AzkarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048352598BF0100513820 /* AzkarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		145048272598BF0100513820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145048052598BEFF00513820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1450480C2598BEFF00513820;
+			remoteInfo = Azkar;
+		};
+		145048322598BF0100513820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145048052598BEFF00513820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1450480C2598BEFF00513820;
+			remoteInfo = Azkar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145048102598BEFF00513820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		145048122598BEFF00513820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		145048142598BEFF00513820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		145048172598BEFF00513820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1450481A2598BEFF00513820 /* Azkar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Azkar.xcdatamodel; sourceTree = "<group>"; };
+		1450481C2598BF0100513820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1450481F2598BF0100513820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		145048212598BF0100513820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145048262598BF0100513820 /* AzkarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzkarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1450482A2598BF0100513820 /* AzkarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarTests.swift; sourceTree = "<group>"; };
+		1450482C2598BF0100513820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145048312598BF0100513820 /* AzkarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzkarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145048352598BF0100513820 /* AzkarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarUITests.swift; sourceTree = "<group>"; };
+		145048372598BF0100513820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1450480A2598BEFF00513820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145048232598BF0100513820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1450482E2598BF0100513820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145048042598BEFF00513820 = {
+			isa = PBXGroup;
+			children = (
+				1450480F2598BEFF00513820 /* Azkar */,
+				145048292598BF0100513820 /* AzkarTests */,
+				145048342598BF0100513820 /* AzkarUITests */,
+				1450480E2598BEFF00513820 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1450480E2598BEFF00513820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1450480D2598BEFF00513820 /* Azkar.app */,
+				145048262598BF0100513820 /* AzkarTests.xctest */,
+				145048312598BF0100513820 /* AzkarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1450480F2598BEFF00513820 /* Azkar */ = {
+			isa = PBXGroup;
+			children = (
+				145048102598BEFF00513820 /* AppDelegate.swift */,
+				145048122598BEFF00513820 /* SceneDelegate.swift */,
+				145048142598BEFF00513820 /* ViewController.swift */,
+				145048162598BEFF00513820 /* Main.storyboard */,
+				1450481C2598BF0100513820 /* Assets.xcassets */,
+				1450481E2598BF0100513820 /* LaunchScreen.storyboard */,
+				145048212598BF0100513820 /* Info.plist */,
+				145048192598BEFF00513820 /* Azkar.xcdatamodeld */,
+			);
+			path = Azkar;
+			sourceTree = "<group>";
+		};
+		145048292598BF0100513820 /* AzkarTests */ = {
+			isa = PBXGroup;
+			children = (
+				1450482A2598BF0100513820 /* AzkarTests.swift */,
+				1450482C2598BF0100513820 /* Info.plist */,
+			);
+			path = AzkarTests;
+			sourceTree = "<group>";
+		};
+		145048342598BF0100513820 /* AzkarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				145048352598BF0100513820 /* AzkarUITests.swift */,
+				145048372598BF0100513820 /* Info.plist */,
+			);
+			path = AzkarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1450480C2598BEFF00513820 /* Azkar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1450483A2598BF0100513820 /* Build configuration list for PBXNativeTarget "Azkar" */;
+			buildPhases = (
+				145048092598BEFF00513820 /* Sources */,
+				1450480A2598BEFF00513820 /* Frameworks */,
+				1450480B2598BEFF00513820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Azkar;
+			productName = Azkar;
+			productReference = 1450480D2598BEFF00513820 /* Azkar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		145048252598BF0100513820 /* AzkarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1450483D2598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarTests" */;
+			buildPhases = (
+				145048222598BF0100513820 /* Sources */,
+				145048232598BF0100513820 /* Frameworks */,
+				145048242598BF0100513820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145048282598BF0100513820 /* PBXTargetDependency */,
+			);
+			name = AzkarTests;
+			productName = AzkarTests;
+			productReference = 145048262598BF0100513820 /* AzkarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		145048302598BF0100513820 /* AzkarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145048402598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarUITests" */;
+			buildPhases = (
+				1450482D2598BF0100513820 /* Sources */,
+				1450482E2598BF0100513820 /* Frameworks */,
+				1450482F2598BF0100513820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145048332598BF0100513820 /* PBXTargetDependency */,
+			);
+			name = AzkarUITests;
+			productName = AzkarUITests;
+			productReference = 145048312598BF0100513820 /* AzkarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		145048052598BEFF00513820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Kareem;
+				TargetAttributes = {
+					1450480C2598BEFF00513820 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					145048252598BF0100513820 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1450480C2598BEFF00513820;
+					};
+					145048302598BF0100513820 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1450480C2598BEFF00513820;
+					};
+				};
+			};
+			buildConfigurationList = 145048082598BEFF00513820 /* Build configuration list for PBXProject "Azkar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 145048042598BEFF00513820;
+			productRefGroup = 1450480E2598BEFF00513820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1450480C2598BEFF00513820 /* Azkar */,
+				145048252598BF0100513820 /* AzkarTests */,
+				145048302598BF0100513820 /* AzkarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1450480B2598BEFF00513820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145048202598BF0100513820 /* LaunchScreen.storyboard in Resources */,
+				1450481D2598BF0100513820 /* Assets.xcassets in Resources */,
+				145048182598BEFF00513820 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145048242598BF0100513820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1450482F2598BF0100513820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		145048092598BEFF00513820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145048152598BEFF00513820 /* ViewController.swift in Sources */,
+				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,
+				145048132598BEFF00513820 /* SceneDelegate.swift in Sources */,
+				1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145048222598BF0100513820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1450482B2598BF0100513820 /* AzkarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1450482D2598BF0100513820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145048362598BF0100513820 /* AzkarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		145048282598BF0100513820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1450480C2598BEFF00513820 /* Azkar */;
+			targetProxy = 145048272598BF0100513820 /* PBXContainerItemProxy */;
+		};
+		145048332598BF0100513820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1450480C2598BEFF00513820 /* Azkar */;
+			targetProxy = 145048322598BF0100513820 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		145048162598BEFF00513820 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145048172598BEFF00513820 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1450481E2598BF0100513820 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1450481F2598BF0100513820 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		145048382598BF0100513820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		145048392598BF0100513820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1450483B2598BF0100513820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Azkar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.Azkar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1450483C2598BF0100513820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Azkar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.Azkar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1450483E2598BF0100513820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AzkarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.AzkarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azkar.app/Azkar";
+			};
+			name = Debug;
+		};
+		1450483F2598BF0100513820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AzkarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.AzkarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azkar.app/Azkar";
+			};
+			name = Release;
+		};
+		145048412598BF0100513820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AzkarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.AzkarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Azkar;
+			};
+			name = Debug;
+		};
+		145048422598BF0100513820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AzkarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.AzkarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Azkar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		145048082598BEFF00513820 /* Build configuration list for PBXProject "Azkar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145048382598BF0100513820 /* Debug */,
+				145048392598BF0100513820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1450483A2598BF0100513820 /* Build configuration list for PBXNativeTarget "Azkar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1450483B2598BF0100513820 /* Debug */,
+				1450483C2598BF0100513820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1450483D2598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1450483E2598BF0100513820 /* Debug */,
+				1450483F2598BF0100513820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145048402598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145048412598BF0100513820 /* Debug */,
+				145048422598BF0100513820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		145048192598BEFF00513820 /* Azkar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1450481A2598BEFF00513820 /* Azkar.xcdatamodel */,
+			);
+			currentVersion = 1450481A2598BEFF00513820 /* Azkar.xcdatamodel */;
+			path = Azkar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 145048052598BEFF00513820 /* Project object */;
+}
