@@ -19,6 +19,26 @@
 		145048452598C79600513820 /* azkar.json in Resources */ = {isa = PBXBuildFile; fileRef = 145048442598C79600513820 /* azkar.json */; };
 		145048482598C84C00513820 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048472598C84C00513820 /* HelperMethods.swift */; };
 		1450484B2598C8C700513820 /* AzkarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450484A2598C8C700513820 /* AzkarModel.swift */; };
+		1450484E259A7A3300513820 /* StoredData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1450484D259A7A3300513820 /* StoredData.plist */; };
+		14504851259A7B0600513820 /* AddAzkarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504850259A7B0600513820 /* AddAzkarViewController.swift */; };
+		14504854259A7CA000513820 /* AzkaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504853259A7CA000513820 /* AzkaryTableViewCell.swift */; };
+		14504857259CB78600513820 /* UIVIEW+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504856259CB78600513820 /* UIVIEW+Extension.swift */; };
+		14504863259CB9C500513820 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14504859259CB9C500513820 /* Ubuntu-Medium.ttf */; };
+		14504864259CB9C500513820 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485A259CB9C500513820 /* Cairo-SemiBold.ttf */; };
+		14504865259CB9C500513820 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485B259CB9C500513820 /* Ubuntu-LightItalic.ttf */; };
+		14504866259CB9C500513820 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485C259CB9C500513820 /* Ubuntu-Regular.ttf */; };
+		14504867259CB9C500513820 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485D259CB9C500513820 /* Ubuntu-Bold.ttf */; };
+		14504868259CB9C500513820 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485E259CB9C500513820 /* Cairo-Regular.ttf */; };
+		14504869259CB9C500513820 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1450485F259CB9C500513820 /* Ubuntu-MediumItalic.ttf */; };
+		1450486A259CB9C500513820 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14504860259CB9C500513820 /* Ubuntu-BoldItalic.ttf */; };
+		1450486B259CB9C500513820 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14504861259CB9C500513820 /* Ubuntu-Italic.ttf */; };
+		1450486C259CB9C500513820 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14504862259CB9C500513820 /* Ubuntu-Light.ttf */; };
+		1450486E259CBEAD00513820 /* azkarMoslemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450486D259CBEAD00513820 /* azkarMoslemTableViewCell.swift */; };
+		14504870259CC5B700513820 /* azkarMoslemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450486F259CC5B700513820 /* azkarMoslemDetailsViewController.swift */; };
+		14504872259CC86F00513820 /* azkarDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504871259CC86F00513820 /* azkarDetailsTableViewCell.swift */; };
+		14504875259CFE1F00513820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504873259CFE1E00513820 /* Constants.swift */; };
+		14504876259CFE1F00513820 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504874259CFE1E00513820 /* UserStatus.swift */; };
+		14504878259D125900513820 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504877259D125900513820 /* mainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +77,26 @@
 		145048442598C79600513820 /* azkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = azkar.json; path = ../../../azkar.json; sourceTree = "<group>"; };
 		145048472598C84C00513820 /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		1450484A2598C8C700513820 /* AzkarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarModel.swift; sourceTree = "<group>"; };
-		1450484C2598DEB800513820 /* azkar-db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "azkar-db"; sourceTree = "<group>"; };
+		1450484D259A7A3300513820 /* StoredData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StoredData.plist; sourceTree = "<group>"; };
+		14504850259A7B0600513820 /* AddAzkarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAzkarViewController.swift; sourceTree = "<group>"; };
+		14504853259A7CA000513820 /* AzkaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkaryTableViewCell.swift; sourceTree = "<group>"; };
+		14504856259CB78600513820 /* UIVIEW+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIEW+Extension.swift"; sourceTree = "<group>"; };
+		14504859259CB9C500513820 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		1450485A259CB9C500513820 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		1450485B259CB9C500513820 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		1450485C259CB9C500513820 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		1450485D259CB9C500513820 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		1450485E259CB9C500513820 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		1450485F259CB9C500513820 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		14504860259CB9C500513820 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		14504861259CB9C500513820 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		14504862259CB9C500513820 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		1450486D259CBEAD00513820 /* azkarMoslemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azkarMoslemTableViewCell.swift; sourceTree = "<group>"; };
+		1450486F259CC5B700513820 /* azkarMoslemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azkarMoslemDetailsViewController.swift; sourceTree = "<group>"; };
+		14504871259CC86F00513820 /* azkarDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azkarDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		14504873259CFE1E00513820 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14504874259CFE1E00513820 /* UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		14504877259D125900513820 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +147,15 @@
 		1450480F2598BEFF00513820 /* Azkar */ = {
 			isa = PBXGroup;
 			children = (
+				1450484D259A7A3300513820 /* StoredData.plist */,
+				14504855259CB76700513820 /* Extensions */,
+				14504852259A7C8000513820 /* Cells */,
 				145048492598C8A900513820 /* Models */,
 				145048462598C81500513820 /* HelperMehods */,
 				145048432598C78100513820 /* Resources */,
 				145048102598BEFF00513820 /* AppDelegate.swift */,
 				145048122598BEFF00513820 /* SceneDelegate.swift */,
-				145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */,
+				1450484F259A7AD400513820 /* ViewControllers */,
 				145048162598BEFF00513820 /* Main.storyboard */,
 				1450481C2598BF0100513820 /* Assets.xcassets */,
 				1450481E2598BF0100513820 /* LaunchScreen.storyboard */,
@@ -144,7 +186,7 @@
 		145048432598C78100513820 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1450484C2598DEB800513820 /* azkar-db */,
+				14504858259CB9C500513820 /* FONT */,
 				145048442598C79600513820 /* azkar.json */,
 			);
 			path = Resources;
@@ -153,6 +195,8 @@
 		145048462598C81500513820 /* HelperMehods */ = {
 			isa = PBXGroup;
 			children = (
+				14504873259CFE1E00513820 /* Constants.swift */,
+				14504874259CFE1E00513820 /* UserStatus.swift */,
 				145048472598C84C00513820 /* HelperMethods.swift */,
 			);
 			path = HelperMehods;
@@ -164,6 +208,52 @@
 				1450484A2598C8C700513820 /* AzkarModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1450484F259A7AD400513820 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */,
+				1450486F259CC5B700513820 /* azkarMoslemDetailsViewController.swift */,
+				14504850259A7B0600513820 /* AddAzkarViewController.swift */,
+				14504877259D125900513820 /* mainTabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14504852259A7C8000513820 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14504853259A7CA000513820 /* AzkaryTableViewCell.swift */,
+				1450486D259CBEAD00513820 /* azkarMoslemTableViewCell.swift */,
+				14504871259CC86F00513820 /* azkarDetailsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		14504855259CB76700513820 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14504856259CB78600513820 /* UIVIEW+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14504858259CB9C500513820 /* FONT */ = {
+			isa = PBXGroup;
+			children = (
+				14504859259CB9C500513820 /* Ubuntu-Medium.ttf */,
+				1450485A259CB9C500513820 /* Cairo-SemiBold.ttf */,
+				1450485B259CB9C500513820 /* Ubuntu-LightItalic.ttf */,
+				1450485C259CB9C500513820 /* Ubuntu-Regular.ttf */,
+				1450485D259CB9C500513820 /* Ubuntu-Bold.ttf */,
+				1450485E259CB9C500513820 /* Cairo-Regular.ttf */,
+				1450485F259CB9C500513820 /* Ubuntu-MediumItalic.ttf */,
+				14504860259CB9C500513820 /* Ubuntu-BoldItalic.ttf */,
+				14504861259CB9C500513820 /* Ubuntu-Italic.ttf */,
+				14504862259CB9C500513820 /* Ubuntu-Light.ttf */,
+			);
+			path = FONT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +360,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14504867259CB9C500513820 /* Ubuntu-Bold.ttf in Resources */,
+				14504865259CB9C500513820 /* Ubuntu-LightItalic.ttf in Resources */,
+				14504869259CB9C500513820 /* Ubuntu-MediumItalic.ttf in Resources */,
+				1450486B259CB9C500513820 /* Ubuntu-Italic.ttf in Resources */,
+				1450484E259A7A3300513820 /* StoredData.plist in Resources */,
 				145048202598BF0100513820 /* LaunchScreen.storyboard in Resources */,
+				14504863259CB9C500513820 /* Ubuntu-Medium.ttf in Resources */,
+				1450486C259CB9C500513820 /* Ubuntu-Light.ttf in Resources */,
 				1450481D2598BF0100513820 /* Assets.xcassets in Resources */,
+				14504868259CB9C500513820 /* Cairo-Regular.ttf in Resources */,
 				145048182598BEFF00513820 /* Main.storyboard in Resources */,
+				1450486A259CB9C500513820 /* Ubuntu-BoldItalic.ttf in Resources */,
+				14504866259CB9C500513820 /* Ubuntu-Regular.ttf in Resources */,
 				145048452598C79600513820 /* azkar.json in Resources */,
+				14504864259CB9C500513820 /* Cairo-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14504876259CFE1F00513820 /* UserStatus.swift in Sources */,
+				14504872259CC86F00513820 /* azkarDetailsTableViewCell.swift in Sources */,
+				14504878259D125900513820 /* mainTabBarViewController.swift in Sources */,
+				14504851259A7B0600513820 /* AddAzkarViewController.swift in Sources */,
+				14504857259CB78600513820 /* UIVIEW+Extension.swift in Sources */,
+				1450486E259CBEAD00513820 /* azkarMoslemTableViewCell.swift in Sources */,
+				14504854259A7CA000513820 /* AzkaryTableViewCell.swift in Sources */,
 				145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */,
 				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,
+				14504875259CFE1F00513820 /* Constants.swift in Sources */,
 				145048482598C84C00513820 /* HelperMethods.swift in Sources */,
 				1450484B2598C8C700513820 /* AzkarModel.swift in Sources */,
 				145048132598BEFF00513820 /* SceneDelegate.swift in Sources */,
+				14504870259CC5B700513820 /* azkarMoslemDetailsViewController.swift in Sources */,
 				1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
