@@ -39,6 +39,9 @@
 		14504875259CFE1F00513820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504873259CFE1E00513820 /* Constants.swift */; };
 		14504876259CFE1F00513820 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504874259CFE1E00513820 /* UserStatus.swift */; };
 		14504878259D125900513820 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504877259D125900513820 /* mainTabBarViewController.swift */; };
+		64E31DE90B76C014CA888D5F /* Pods_AzkarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */; };
+		841830D3B6C273DE46B47E44 /* Pods_AzkarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */; };
+		EDA149183B8464A1CF9C12E2 /* Pods_Azkar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.release.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.release.xcconfig"; sourceTree = "<group>"; };
 		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145048102598BEFF00513820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		145048122598BEFF00513820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 		14504873259CFE1E00513820 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14504874259CFE1E00513820 /* UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		14504877259D125900513820 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
+		203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.debug.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Azkar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarUITests.release.xcconfig"; path = "Target Support Files/Pods-AzkarUITests/Pods-AzkarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		928A6AB410DEA90A13043EDC /* Pods-AzkarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarUITests.debug.xcconfig"; path = "Target Support Files/Pods-AzkarUITests/Pods-AzkarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC71819AAB6C86564E1CED71 /* Pods-Azkar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Azkar.debug.xcconfig"; path = "Target Support Files/Pods-Azkar/Pods-Azkar.debug.xcconfig"; sourceTree = "<group>"; };
+		CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzkarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzkarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72E2F625E0871322C0CA8CC /* Pods-Azkar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Azkar.release.xcconfig"; path = "Target Support Files/Pods-Azkar/Pods-Azkar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA149183B8464A1CF9C12E2 /* Pods_Azkar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E31DE90B76C014CA888D5F /* Pods_AzkarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +132,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841830D3B6C273DE46B47E44 /* Pods_AzkarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08A54C9859B5F76358159352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */,
+				F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */,
+				CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		145048042598BEFF00513820 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +156,8 @@
 				145048292598BF0100513820 /* AzkarTests */,
 				145048342598BF0100513820 /* AzkarUITests */,
 				1450480E2598BEFF00513820 /* Products */,
+				37350C39A7112162AEAFD488 /* Pods */,
+				08A54C9859B5F76358159352 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +283,20 @@
 			path = FONT;
 			sourceTree = "<group>";
 		};
+		37350C39A7112162AEAFD488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC71819AAB6C86564E1CED71 /* Pods-Azkar.debug.xcconfig */,
+				F72E2F625E0871322C0CA8CC /* Pods-Azkar.release.xcconfig */,
+				203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */,
+				142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */,
+				928A6AB410DEA90A13043EDC /* Pods-AzkarUITests.debug.xcconfig */,
+				8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1450483A2598BF0100513820 /* Build configuration list for PBXNativeTarget "Azkar" */;
 			buildPhases = (
+				420C93D0450FD777A19C28A9 /* [CP] Check Pods Manifest.lock */,
 				145048092598BEFF00513820 /* Sources */,
 				1450480A2598BEFF00513820 /* Frameworks */,
 				1450480B2598BEFF00513820 /* Resources */,
+				0D663B6F36829ABC47A96B9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1450483D2598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarTests" */;
 			buildPhases = (
+				C11819FA3127A35C7BD3C438 /* [CP] Check Pods Manifest.lock */,
 				145048222598BF0100513820 /* Sources */,
 				145048232598BF0100513820 /* Frameworks */,
 				145048242598BF0100513820 /* Resources */,
@@ -298,6 +342,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 145048402598BF0100513820 /* Build configuration list for PBXNativeTarget "AzkarUITests" */;
 			buildPhases = (
+				B5D9EC803548ADEE91F0DD15 /* [CP] Check Pods Manifest.lock */,
 				1450482D2598BF0100513820 /* Sources */,
 				1450482E2598BF0100513820 /* Frameworks */,
 				1450482F2598BF0100513820 /* Resources */,
@@ -393,6 +438,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D663B6F36829ABC47A96B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		420C93D0450FD777A19C28A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Azkar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D9EC803548ADEE91F0DD15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AzkarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11819FA3127A35C7BD3C438 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AzkarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		145048092598BEFF00513820 /* Sources */ = {
@@ -584,6 +715,7 @@
 		};
 		1450483B2598BF0100513820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC71819AAB6C86564E1CED71 /* Pods-Azkar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +734,7 @@
 		};
 		1450483C2598BF0100513820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72E2F625E0871322C0CA8CC /* Pods-Azkar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,6 +753,7 @@
 		};
 		1450483E2598BF0100513820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -641,6 +775,7 @@
 		};
 		1450483F2598BF0100513820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,6 +797,7 @@
 		};
 		145048412598BF0100513820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928A6AB410DEA90A13043EDC /* Pods-AzkarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,6 +817,7 @@
 		};
 		145048422598BF0100513820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

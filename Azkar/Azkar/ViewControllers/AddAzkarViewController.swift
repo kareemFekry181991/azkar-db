@@ -23,7 +23,7 @@ class AddAzkarViewController: UIViewController {
     var azkaryArr  : [String]? = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserStatus.azkaryArr?.count == 0 {
+        if UserStatus.azkaryArr?.count == 0 || UserStatus.azkaryArr == nil {
             azkaryTableView.isHidden = true
             self.messageLabel.isHidden = false
         }
@@ -38,7 +38,9 @@ class AddAzkarViewController: UIViewController {
     }
     @IBAction func AddAzkarClicked(_ sender: UIButton) {
         if !azkaryTextView.text.isEmpty {
-            self.azkaryArr = UserStatus.azkaryArr
+            if UserStatus.azkaryArr?.count != 0 && UserStatus.azkaryArr != nil {
+               self.azkaryArr = UserStatus.azkaryArr
+            }
             self.azkaryArr?.append(self.azkaryTextView.text ?? "")
             UserStatus.azkaryArr = self.azkaryArr
             self.addAzakarView.isHidden = true
