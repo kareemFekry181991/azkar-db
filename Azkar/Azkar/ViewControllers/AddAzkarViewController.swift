@@ -75,6 +75,7 @@ extension AddAzkarViewController : UITableViewDelegate , UITableViewDataSource {
              UserStatus.azkaryArr?.remove(object:  UserStatus.azkaryArr?[indexPath.row] ?? "")
             if UserStatus.azkaryArr?.count == 0 {
                 self.messageLabel.isHidden = false
+                self.azkaryArr = []
             }
             self.azkaryTableView.reloadData()
         }
