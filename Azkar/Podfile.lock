@@ -1,16 +1,20 @@
 PODS:
+  - Adhan (1.2.0)
   - IQKeyboardManager (6.5.6)
 
 DEPENDENCIES:
+  - Adhan
   - IQKeyboardManager
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Adhan
     - IQKeyboardManager
 
 SPEC CHECKSUMS:
+  Adhan: 3cd2cd98044266acd7ed3221afe3829ef779ec8e
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
 
-PODFILE CHECKSUM: c0defe09a9e4222e41f1681b6380c18ebdc23e97
+PODFILE CHECKSUM: e543d068700bcb3816420baa8af3de65716f5793
 
 COCOAPODS: 1.7.5

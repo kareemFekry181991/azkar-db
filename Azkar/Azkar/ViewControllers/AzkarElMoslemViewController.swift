@@ -20,10 +20,10 @@ class AzkarElMoslemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.addNotification()
         let azkarData = HelperMethods.readLocalFile(forName: "azkar") ?? Data()
         self.parse(jsonData: azkarData)
     }
-    
     func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode(AzkarModel.self,
@@ -56,4 +56,48 @@ extension AzkarElMoslemViewController : UITableViewDelegate , UITableViewDataSou
         scene.azkarData =  self.azkar?[indexPath.row].data
         self.navigationController?.pushViewController(scene , animated: true)
     }
+}
+
+
+//MARK:- Schedule Prayer times
+extension AzkarElMoslemViewController {
+    func schedulePrayerTimes() {
+        let center =  UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        let content = UNMutableNotificationContent()
+        content.title = "Feed the cat"
+        content.subtitle = "It looks hungry"
+        content.body = "Some message"
+//        content.sound = UNNotificationSound.default
+        let soundName = UNNotificationSoundName("azan.mp3")
+        content.sound = UNNotificationSound(named: soundName)
+        // show this notification five seconds from now
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 , repeats: true)
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        // add our notification request
+        center.add(request)
+    }
+    
+    
+    func addNotification() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+            (granted, error) in
+            if granted {
+                print("yes")
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        print("All set!")
+                        self.schedulePrayerTimes()
+                    } else if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+                
+            } else {
+                print("No")
+            }
+        }
+    }
+
 }

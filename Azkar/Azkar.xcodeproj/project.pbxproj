@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		145048112598BEFF00513820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048102598BEFF00513820 /* AppDelegate.swift */; };
-		145048132598BEFF00513820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048122598BEFF00513820 /* SceneDelegate.swift */; };
 		145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */; };
 		145048182598BEFF00513820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145048162598BEFF00513820 /* Main.storyboard */; };
 		1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145048192598BEFF00513820 /* Azkar.xcdatamodeld */; };
@@ -39,6 +38,11 @@
 		14504875259CFE1F00513820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504873259CFE1E00513820 /* Constants.swift */; };
 		14504876259CFE1F00513820 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504874259CFE1E00513820 /* UserStatus.swift */; };
 		14504878259D125900513820 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504877259D125900513820 /* mainTabBarViewController.swift */; };
+		14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC125A320E400EB7B79 /* AzanViewController.swift */; };
+		14945CC425A3222000EB7B79 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC325A3222000EB7B79 /* SettingsViewController.swift */; };
+		14945CC625A34BB900EB7B79 /* AzanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */; };
+		14BA736F25A3A6530089902F /* azan.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BA736E25A3A6530089902F /* azan.png */; };
+		14C68A0F25A75C8E0054F2C8 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14C68A0E25A75C8E0054F2C8 /* azan.mp3 */; };
 		64E31DE90B76C014CA888D5F /* Pods_AzkarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */; };
 		841830D3B6C273DE46B47E44 /* Pods_AzkarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */; };
 		EDA149183B8464A1CF9C12E2 /* Pods_Azkar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */; };
@@ -63,9 +67,9 @@
 
 /* Begin PBXFileReference section */
 		142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.release.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.release.xcconfig"; sourceTree = "<group>"; };
+		144C2C6C25A4817100C9E513 /* Azkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Azkar.entitlements; sourceTree = "<group>"; };
 		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145048102598BEFF00513820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		145048122598BEFF00513820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarElMoslemViewController.swift; sourceTree = "<group>"; };
 		145048172598BEFF00513820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1450481A2598BEFF00513820 /* Azkar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Azkar.xcdatamodel; sourceTree = "<group>"; };
@@ -101,6 +105,11 @@
 		14504873259CFE1E00513820 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14504874259CFE1E00513820 /* UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		14504877259D125900513820 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
+		14945CC125A320E400EB7B79 /* AzanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanViewController.swift; sourceTree = "<group>"; };
+		14945CC325A3222000EB7B79 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanTableViewCell.swift; sourceTree = "<group>"; };
+		14BA736E25A3A6530089902F /* azan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = azan.png; sourceTree = "<group>"; };
+		14C68A0E25A75C8E0054F2C8 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
 		203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.debug.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Azkar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarUITests.release.xcconfig"; path = "Target Support Files/Pods-AzkarUITests/Pods-AzkarUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +183,7 @@
 		1450480F2598BEFF00513820 /* Azkar */ = {
 			isa = PBXGroup;
 			children = (
+				144C2C6C25A4817100C9E513 /* Azkar.entitlements */,
 				1450484D259A7A3300513820 /* StoredData.plist */,
 				14504855259CB76700513820 /* Extensions */,
 				14504852259A7C8000513820 /* Cells */,
@@ -181,7 +191,6 @@
 				145048462598C81500513820 /* HelperMehods */,
 				145048432598C78100513820 /* Resources */,
 				145048102598BEFF00513820 /* AppDelegate.swift */,
-				145048122598BEFF00513820 /* SceneDelegate.swift */,
 				1450484F259A7AD400513820 /* ViewControllers */,
 				145048162598BEFF00513820 /* Main.storyboard */,
 				1450481C2598BF0100513820 /* Assets.xcassets */,
@@ -213,6 +222,8 @@
 		145048432598C78100513820 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14C68A0E25A75C8E0054F2C8 /* azan.mp3 */,
+				14BA736E25A3A6530089902F /* azan.png */,
 				14504858259CB9C500513820 /* FONT */,
 				145048442598C79600513820 /* azkar.json */,
 			);
@@ -244,6 +255,8 @@
 				1450486F259CC5B700513820 /* azkarMoslemDetailsViewController.swift */,
 				14504850259A7B0600513820 /* AddAzkarViewController.swift */,
 				14504877259D125900513820 /* mainTabBarViewController.swift */,
+				14945CC125A320E400EB7B79 /* AzanViewController.swift */,
+				14945CC325A3222000EB7B79 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 				14504853259A7CA000513820 /* AzkaryTableViewCell.swift */,
 				1450486D259CBEAD00513820 /* azkarMoslemTableViewCell.swift */,
 				14504871259CC86F00513820 /* azkarDetailsTableViewCell.swift */,
+				14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -293,7 +307,6 @@
 				928A6AB410DEA90A13043EDC /* Pods-AzkarUITests.debug.xcconfig */,
 				8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +420,11 @@
 			files = (
 				14504867259CB9C500513820 /* Ubuntu-Bold.ttf in Resources */,
 				14504865259CB9C500513820 /* Ubuntu-LightItalic.ttf in Resources */,
+				14C68A0F25A75C8E0054F2C8 /* azan.mp3 in Resources */,
 				14504869259CB9C500513820 /* Ubuntu-MediumItalic.ttf in Resources */,
 				1450486B259CB9C500513820 /* Ubuntu-Italic.ttf in Resources */,
 				1450484E259A7A3300513820 /* StoredData.plist in Resources */,
+				14BA736F25A3A6530089902F /* azan.png in Resources */,
 				145048202598BF0100513820 /* LaunchScreen.storyboard in Resources */,
 				14504863259CB9C500513820 /* Ubuntu-Medium.ttf in Resources */,
 				1450486C259CB9C500513820 /* Ubuntu-Light.ttf in Resources */,
@@ -541,8 +556,10 @@
 				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,
 				14504875259CFE1F00513820 /* Constants.swift in Sources */,
 				145048482598C84C00513820 /* HelperMethods.swift in Sources */,
+				14945CC625A34BB900EB7B79 /* AzanTableViewCell.swift in Sources */,
 				1450484B2598C8C700513820 /* AzkarModel.swift in Sources */,
-				145048132598BEFF00513820 /* SceneDelegate.swift in Sources */,
+				14945CC425A3222000EB7B79 /* SettingsViewController.swift in Sources */,
+				14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */,
 				14504870259CC5B700513820 /* azkarMoslemDetailsViewController.swift in Sources */,
 				1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */,
 			);
@@ -718,6 +735,7 @@
 			baseConfigurationReference = AC71819AAB6C86564E1CED71 /* Pods-Azkar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
@@ -737,6 +755,7 @@
 			baseConfigurationReference = F72E2F625E0871322C0CA8CC /* Pods-Azkar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;

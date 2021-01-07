@@ -7,6 +7,8 @@ target 'Azkar' do
 
   # Pods for Azkar
 pod 'IQKeyboardManager'
+pod 'Adhan'
+
 
   target 'AzkarTests' do
     inherit! :search_paths
