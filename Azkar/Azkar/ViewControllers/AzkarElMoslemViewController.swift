@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Adhan
 
 class AzkarElMoslemViewController: UIViewController {
 
@@ -65,7 +66,7 @@ extension AzkarElMoslemViewController {
         let center =  UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         let content = UNMutableNotificationContent()
-        content.title = "Feed the cat"
+        content.title = "الآذان"
         content.subtitle = "It looks hungry"
         content.body = "Some message"
 //        content.sound = UNNotificationSound.default
@@ -75,11 +76,10 @@ extension AzkarElMoslemViewController {
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 , repeats: true)
         // choose a random identifier
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        print(request)
         // add our notification request
         center.add(request)
     }
-    
-    
     func addNotification() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
             (granted, error) in
@@ -88,7 +88,38 @@ extension AzkarElMoslemViewController {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                     if success {
                         print("All set!")
-                        self.schedulePrayerTimes()
+//                        self.schedulePrayerTimes()
+                        
+                        
+                        var localTimeZoneIdentifier: String { return TimeZone.current.identifier }
+                        print(localTimeZoneIdentifier)
+                        let cal = Calendar(identifier: Calendar.Identifier.gregorian)
+                        let date = cal.dateComponents([.year, .month, .day], from: Date())
+                        let coordinates = Coordinates(latitude: 30.033333, longitude: 31.233334)
+                        var params = CalculationMethod.moonsightingCommittee.params
+                        params.madhab = .hanafi
+                        if let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) {
+                            let formatter = DateFormatter()
+                            formatter.timeStyle = .short
+                            formatter.timeZone = TimeZone(identifier: localTimeZoneIdentifier)
+                            
+                            
+                            print("fajr \(formatter.string(from: prayers.fajr))")
+                            print("sunrise \(formatter.string(from: prayers.sunrise))")
+                            print("dhuhr \(formatter.string(from: prayers.dhuhr))")
+                            print("asr \(formatter.string(from: prayers.asr))")
+                            print("maghrib \(formatter.string(from: prayers.maghrib))")
+                            print("isha \(formatter.string(from: prayers.isha))")
+                            
+                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الفجر",time: formatter.string(from: prayers.fajr)  , identifier:  UUID().uuidString)
+                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الشروق",time: formatter.string(from: prayers.sunrise) , identifier: UUID().uuidString)
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة الظهر",time: formatter.string(from: prayers.dhuhr) , identifier:  UUID().uuidString)
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العصر" ,time: formatter.string(from: prayers.asr) , identifier: UUID().uuidString)
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة المغرب" ,time: formatter.string(from: prayers.maghrib) , identifier:  UUID().uuidString)
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العشاء" ,time: formatter.string(from: prayers.isha) , identifier:  UUID().uuidString)
+
+                        }
+                        
                     } else if let error = error {
                         print(error.localizedDescription)
                     }
@@ -99,5 +130,51 @@ extension AzkarElMoslemViewController {
             }
         }
     }
+    
+    func schedulePrayers(notificationTitle: String , time: String , identifier:String) {
+        let center =  UNUserNotificationCenter.current()
+//        center.removeAllPendingNotificationRequests()
+        let content = UNMutableNotificationContent()
+        content.title = notificationTitle
+        content.subtitle = "It looks hungry"
+        content.body = "Some message"
+        //        content.sound = UNNotificationSound.default
+        let soundName = UNNotificationSoundName("azan.mp3")
+        content.sound = UNNotificationSound(named: soundName)
+        // show this notification five seconds from now
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 , repeats: true)
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        print(request)
+        // add our notification request
+        center.add(request)
+        
+    }
+}
+
+
+extension AzkarElMoslemViewController {
+
+    func scheduleNotification(notificationType: String,time: String , identifier:String) {
+        let center =  UNUserNotificationCenter.current()
+//        center.removeAllPendingNotificationRequests()
+        let content = UNMutableNotificationContent()
+        let startTime = time
+        let fmt = DateFormatter()
+        fmt.dateFormat = "h:mm a"
+        let dateFrom = fmt.date(from: startTime)!
+        content.title = notificationType
+        content.body = "الله اكبر الله اكبر لا اله الا الله"
+        let soundName = UNNotificationSoundName("azan.mp3")
+        content.sound = UNNotificationSound(named: soundName)
+//        let date = Date(timeIntervalSinceNow: 3600)
+        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: dateFrom)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+        let identifier = identifier
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        center.add(request)
+    }
+
+
 
 }
