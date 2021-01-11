@@ -28,6 +28,7 @@ class AzanViewController: UIViewController {
     }
     let formatter = DateFormatter()
     var azanTimeArr : [AzanTimes]? = []
+    var azanTimes = ["05:21 am" , "06:52 am" , "12:04 pm" , "02:56 pm" , "5:15 pm", "06:37 pm"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +73,7 @@ extension AzanViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AzanTableViewCell", for: indexPath) as! AzanTableViewCell
         cell.azanNameLabel.text = self.azanTimeArr?[indexPath.row].name
-        cell.AzanTimeLabel.text = self.azanTimeArr?[indexPath.row].azanTime
+        cell.AzanTimeLabel.text = self.azanTimes[indexPath.row]
         return cell
     }
 }

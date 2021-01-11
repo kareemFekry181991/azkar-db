@@ -48,5 +48,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Your location is used to provide more accurate results for nearby hotels.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is used to provide more accurate results for nearby hotels.</string>
 </dict>
 </plist>

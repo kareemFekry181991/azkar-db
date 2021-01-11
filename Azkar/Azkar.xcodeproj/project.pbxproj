@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */; };
 		145048112598BEFF00513820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048102598BEFF00513820 /* AppDelegate.swift */; };
 		145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */; };
 		145048182598BEFF00513820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145048162598BEFF00513820 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.release.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.release.xcconfig"; sourceTree = "<group>"; };
 		144C2C6C25A4817100C9E513 /* Azkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Azkar.entitlements; sourceTree = "<group>"; };
 		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		142360D425A9F1DB00F9D0D2 /* LocationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */,
+			);
+			path = LocationHelper;
+			sourceTree = "<group>";
+		};
 		145048042598BEFF00513820 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +195,7 @@
 			children = (
 				144C2C6C25A4817100C9E513 /* Azkar.entitlements */,
 				1450484D259A7A3300513820 /* StoredData.plist */,
+				142360D425A9F1DB00F9D0D2 /* LocationHelper */,
 				14504855259CB76700513820 /* Extensions */,
 				14504852259A7C8000513820 /* Cells */,
 				145048492598C8A900513820 /* Models */,
@@ -551,6 +562,7 @@
 				14504851259A7B0600513820 /* AddAzkarViewController.swift in Sources */,
 				14504857259CB78600513820 /* UIVIEW+Extension.swift in Sources */,
 				1450486E259CBEAD00513820 /* azkarMoslemTableViewCell.swift in Sources */,
+				142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */,
 				14504854259A7CA000513820 /* AzkaryTableViewCell.swift in Sources */,
 				145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */,
 				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,

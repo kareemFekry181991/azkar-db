@@ -550,15 +550,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIq-K1-fmY">
+                                <rect key="frame" x="10" y="429.5" width="394" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c0B-eq-8d9" firstAttribute="top" secondItem="rhY-fd-38C" secondAttribute="top" id="3HZ-A2-D3X"/>
                             <constraint firstItem="c0B-eq-8d9" firstAttribute="leading" secondItem="rhY-fd-38C" secondAttribute="leading" id="BdK-IH-yT9"/>
+                            <constraint firstItem="OIq-K1-fmY" firstAttribute="centerX" secondItem="oRv-7V-P95" secondAttribute="centerX" id="Cbo-5t-k99"/>
                             <constraint firstItem="rhY-fd-38C" firstAttribute="trailing" secondItem="ZHX-Qw-peL" secondAttribute="trailing" id="D8m-A7-JWn"/>
                             <constraint firstAttribute="bottom" secondItem="c0B-eq-8d9" secondAttribute="bottom" id="JdN-Rx-SRE"/>
+                            <constraint firstItem="rhY-fd-38C" firstAttribute="trailing" secondItem="OIq-K1-fmY" secondAttribute="trailing" constant="10" id="c77-Mc-Mxq"/>
+                            <constraint firstItem="OIq-K1-fmY" firstAttribute="centerY" secondItem="oRv-7V-P95" secondAttribute="centerY" id="ePP-Zf-arQ"/>
                             <constraint firstItem="ZHX-Qw-peL" firstAttribute="top" secondItem="rhY-fd-38C" secondAttribute="top" constant="-88" id="ktm-tM-4e1"/>
                             <constraint firstItem="ZHX-Qw-peL" firstAttribute="leading" secondItem="rhY-fd-38C" secondAttribute="leading" id="qEq-HV-GgZ"/>
+                            <constraint firstItem="OIq-K1-fmY" firstAttribute="leading" secondItem="rhY-fd-38C" secondAttribute="leading" constant="10" id="rKG-n1-X5C"/>
                             <constraint firstItem="c0B-eq-8d9" firstAttribute="trailing" secondItem="rhY-fd-38C" secondAttribute="trailing" id="tZn-4g-sf2"/>
                             <constraint firstItem="rhY-fd-38C" firstAttribute="bottom" secondItem="ZHX-Qw-peL" secondAttribute="bottom" id="xZf-0e-3r1"/>
                         </constraints>
@@ -567,11 +577,12 @@
                     <navigationItem key="navigationItem" id="noT-A7-nVT"/>
                     <connections>
                         <outlet property="azkarDetailsTableView" destination="c0B-eq-8d9" id="kpo-if-rLb"/>
+                        <outlet property="azkarNameLabel" destination="OIq-K1-fmY" id="t9i-0s-IhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvV-5S-ggB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3304" y="-216"/>
+            <point key="canvasLocation" x="3302.898550724638" y="-216.29464285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ch1-bn-El0">
