@@ -12,7 +12,7 @@ class mainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.selectedIndex = 3
+        self.selectedIndex = 4
     }
     
     /*
@@ -24,5 +24,4 @@ class mainTabBarViewController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */; };
+		143FF1FE25C6DEC30026E0E2 /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */; };
 		145048112598BEFF00513820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048102598BEFF00513820 /* AppDelegate.swift */; };
 		145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */; };
 		145048182598BEFF00513820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145048162598BEFF00513820 /* Main.storyboard */; };
@@ -39,11 +40,17 @@
 		14504875259CFE1F00513820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504873259CFE1E00513820 /* Constants.swift */; };
 		14504876259CFE1F00513820 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504874259CFE1E00513820 /* UserStatus.swift */; };
 		14504878259D125900513820 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504877259D125900513820 /* mainTabBarViewController.swift */; };
+		146B3E0325C04357007B0711 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B3E0225C04357007B0711 /* HomeViewController.swift */; };
+		1479693B25EEDB2B00786607 /* fahresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479693A25EEDB2B00786607 /* fahresTableViewCell.swift */; };
 		14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC125A320E400EB7B79 /* AzanViewController.swift */; };
 		14945CC425A3222000EB7B79 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC325A3222000EB7B79 /* SettingsViewController.swift */; };
 		14945CC625A34BB900EB7B79 /* AzanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */; };
+		14ADEDBA25D6C87B0072417F /* azkarSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADEDB925D6C87B0072417F /* azkarSettingsViewController.swift */; };
 		14BA736F25A3A6530089902F /* azan.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BA736E25A3A6530089902F /* azan.png */; };
 		14C68A0F25A75C8E0054F2C8 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14C68A0E25A75C8E0054F2C8 /* azan.mp3 */; };
+		14DD492B25EB99E600474A92 /* quran_r.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 14DD492A25EB99E600474A92 /* quran_r.pdf */; };
+		14DD493025EB9AF300474A92 /* QuraanKareemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */; };
+		14FC095525D16D9600199FA3 /* el_messiri_medium_d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */; };
 		64E31DE90B76C014CA888D5F /* Pods_AzkarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */; };
 		841830D3B6C273DE46B47E44 /* Pods_AzkarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */; };
 		EDA149183B8464A1CF9C12E2 /* Pods_Azkar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */; };
@@ -69,6 +76,7 @@
 /* Begin PBXFileReference section */
 		142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.release.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.release.xcconfig"; sourceTree = "<group>"; };
+		143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		144C2C6C25A4817100C9E513 /* Azkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Azkar.entitlements; sourceTree = "<group>"; };
 		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145048102598BEFF00513820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,11 +115,17 @@
 		14504873259CFE1E00513820 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14504874259CFE1E00513820 /* UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		14504877259D125900513820 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
+		146B3E0225C04357007B0711 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1479693A25EEDB2B00786607 /* fahresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fahresTableViewCell.swift; sourceTree = "<group>"; };
 		14945CC125A320E400EB7B79 /* AzanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanViewController.swift; sourceTree = "<group>"; };
 		14945CC325A3222000EB7B79 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanTableViewCell.swift; sourceTree = "<group>"; };
+		14ADEDB925D6C87B0072417F /* azkarSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azkarSettingsViewController.swift; sourceTree = "<group>"; };
 		14BA736E25A3A6530089902F /* azan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = azan.png; sourceTree = "<group>"; };
 		14C68A0E25A75C8E0054F2C8 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		14DD492A25EB99E600474A92 /* quran_r.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quran_r.pdf; sourceTree = "<group>"; };
+		14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuraanKareemViewController.swift; sourceTree = "<group>"; };
+		14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = el_messiri_medium_d.ttf; sourceTree = "<group>"; };
 		203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.debug.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Azkar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9BF5925CB0AEF4187792BB /* Pods-AzkarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarUITests.release.xcconfig"; path = "Target Support Files/Pods-AzkarUITests/Pods-AzkarUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,9 +215,9 @@
 				145048492598C8A900513820 /* Models */,
 				145048462598C81500513820 /* HelperMehods */,
 				145048432598C78100513820 /* Resources */,
-				145048102598BEFF00513820 /* AppDelegate.swift */,
 				1450484F259A7AD400513820 /* ViewControllers */,
 				145048162598BEFF00513820 /* Main.storyboard */,
+				145048102598BEFF00513820 /* AppDelegate.swift */,
 				1450481C2598BF0100513820 /* Assets.xcassets */,
 				1450481E2598BF0100513820 /* LaunchScreen.storyboard */,
 				145048212598BF0100513820 /* Info.plist */,
@@ -233,6 +247,7 @@
 		145048432598C78100513820 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14DD492A25EB99E600474A92 /* quran_r.pdf */,
 				14C68A0E25A75C8E0054F2C8 /* azan.mp3 */,
 				14BA736E25A3A6530089902F /* azan.png */,
 				14504858259CB9C500513820 /* FONT */,
@@ -268,6 +283,10 @@
 				14504877259D125900513820 /* mainTabBarViewController.swift */,
 				14945CC125A320E400EB7B79 /* AzanViewController.swift */,
 				14945CC325A3222000EB7B79 /* SettingsViewController.swift */,
+				146B3E0225C04357007B0711 /* HomeViewController.swift */,
+				143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */,
+				14ADEDB925D6C87B0072417F /* azkarSettingsViewController.swift */,
+				14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -279,6 +298,7 @@
 				1450486D259CBEAD00513820 /* azkarMoslemTableViewCell.swift */,
 				14504871259CC86F00513820 /* azkarDetailsTableViewCell.swift */,
 				14945CC525A34BB900EB7B79 /* AzanTableViewCell.swift */,
+				1479693A25EEDB2B00786607 /* fahresTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -294,6 +314,7 @@
 		14504858259CB9C500513820 /* FONT */ = {
 			isa = PBXGroup;
 			children = (
+				14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */,
 				14504859259CB9C500513820 /* Ubuntu-Medium.ttf */,
 				1450485A259CB9C500513820 /* Cairo-SemiBold.ttf */,
 				1450485B259CB9C500513820 /* Ubuntu-LightItalic.ttf */,
@@ -332,7 +353,7 @@
 				145048092598BEFF00513820 /* Sources */,
 				1450480A2598BEFF00513820 /* Frameworks */,
 				1450480B2598BEFF00513820 /* Resources */,
-				0D663B6F36829ABC47A96B9D /* [CP] Embed Pods Frameworks */,
+				FAB48083BBE546C306F76D68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,10 +462,12 @@
 				1450486C259CB9C500513820 /* Ubuntu-Light.ttf in Resources */,
 				1450481D2598BF0100513820 /* Assets.xcassets in Resources */,
 				14504868259CB9C500513820 /* Cairo-Regular.ttf in Resources */,
+				14DD492B25EB99E600474A92 /* quran_r.pdf in Resources */,
 				145048182598BEFF00513820 /* Main.storyboard in Resources */,
 				1450486A259CB9C500513820 /* Ubuntu-BoldItalic.ttf in Resources */,
 				14504866259CB9C500513820 /* Ubuntu-Regular.ttf in Resources */,
 				145048452598C79600513820 /* azkar.json in Resources */,
+				14FC095525D16D9600199FA3 /* el_messiri_medium_d.ttf in Resources */,
 				14504864259CB9C500513820 /* Cairo-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,23 +489,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D663B6F36829ABC47A96B9D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		420C93D0450FD777A19C28A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,6 +555,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAB48083BBE546C306F76D68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -558,11 +581,16 @@
 			files = (
 				14504876259CFE1F00513820 /* UserStatus.swift in Sources */,
 				14504872259CC86F00513820 /* azkarDetailsTableViewCell.swift in Sources */,
+				146B3E0325C04357007B0711 /* HomeViewController.swift in Sources */,
 				14504878259D125900513820 /* mainTabBarViewController.swift in Sources */,
+				14ADEDBA25D6C87B0072417F /* azkarSettingsViewController.swift in Sources */,
 				14504851259A7B0600513820 /* AddAzkarViewController.swift in Sources */,
+				1479693B25EEDB2B00786607 /* fahresTableViewCell.swift in Sources */,
 				14504857259CB78600513820 /* UIVIEW+Extension.swift in Sources */,
 				1450486E259CBEAD00513820 /* azkarMoslemTableViewCell.swift in Sources */,
 				142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */,
+				143FF1FE25C6DEC30026E0E2 /* QiblaViewController.swift in Sources */,
+				14DD493025EB9AF300474A92 /* QuraanKareemViewController.swift in Sources */,
 				14504854259A7CA000513820 /* AzkaryTableViewCell.swift in Sources */,
 				145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */,
 				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,
@@ -748,6 +776,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
@@ -755,9 +784,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.Azkar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.zadmoslem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -768,6 +798,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
@@ -775,9 +806,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.Azkar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.zadmoslem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

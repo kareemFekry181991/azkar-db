@@ -19,4 +19,24 @@ struct UserStatus {
             return UserDefaults.standard.stringArray(forKey: Constants.azkaryArr)
         }
     }
+    
+    
+    static var latitude:Double? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.latitude)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.double(forKey: Constants.latitude)
+        }
+    }
+    static var longtitude:Double? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.longtitude)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.double(forKey: Constants.longtitude)
+        }
+    }
 }

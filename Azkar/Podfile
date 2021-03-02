@@ -4,20 +4,21 @@
 target 'Azkar' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for Azkar
-pod 'IQKeyboardManager'
-pod 'Adhan'
-
-
+  pod 'IQKeyboardManager'
+  pod 'Adhan'
+  pod 'WWCalendarTimeSelector'
+  pod 'PDFReader'
+  
   target 'AzkarTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'AzkarUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end

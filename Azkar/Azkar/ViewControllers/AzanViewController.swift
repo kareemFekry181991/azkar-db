@@ -20,15 +20,18 @@ struct AzanTimes {
 
 class AzanViewController: UIViewController {
     
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var azanName: UILabel!
     @IBOutlet weak var azanTableView: UITableView! {
         didSet {
             azanTableView.dataSource = self
             azanTableView.delegate = self
         }
     }
+    var coordinates : Coordinates?
     let formatter = DateFormatter()
     var azanTimeArr : [AzanTimes]? = []
-    var azanTimes = ["05:21 am" , "06:52 am" , "12:04 pm" , "02:56 pm" , "5:15 pm", "06:37 pm"]
+//    var azanTimes = ["05:21 am" , "06:52 am" , "12:04 pm" , "02:56 pm" , "5:15 pm", "06:37 pm"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +45,14 @@ class AzanViewController: UIViewController {
         print(localTimeZoneIdentifier)
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
         let date = cal.dateComponents([.year, .month, .day], from: Date())
-        let coordinates = Coordinates(latitude: 30.033333, longitude: 31.233334)
-        var params = CalculationMethod.moonsightingCommittee.params
-        params.madhab = .hanafi
-        if let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) {
+        if UserStatus.latitude == 0 || UserStatus.longtitude == 0 {
+            self.coordinates = Coordinates(latitude:  30.033333, longitude:  31.233334)
+        } else {
+            self.coordinates = Coordinates(latitude: UserStatus.latitude ?? 30.033333, longitude: UserStatus.longtitude ?? 31.233334)
+        }
+        var params = CalculationMethod.egyptian.params
+        params.madhab = .shafi
+        if let prayers = PrayerTimes(coordinates: self.coordinates! , date: date, calculationParameters: params) {
             let formatter = DateFormatter()
             formatter.timeStyle = .short
             formatter.timeZone = TimeZone(identifier: localTimeZoneIdentifier)
@@ -61,6 +68,11 @@ class AzanViewController: UIViewController {
             self.azanTimeArr?.insert(AzanTimes(name: "العصر" , azanTime: formatter.string(from: prayers.asr)), at: 3)
             self.azanTimeArr?.insert(AzanTimes(name: "المغرب" , azanTime: formatter.string(from: prayers.maghrib)), at: 4)
             self.azanTimeArr?.insert(AzanTimes(name:  "العشاء" , azanTime: formatter.string(from: prayers.isha)), at: 5)
+
+            let next = prayers.nextPrayer()
+            let countdown = prayers.time(for: next ?? Prayer.fajr)
+            self.azanName.text = "\(next ?? Prayer.fajr)"
+            self.timeLabel.text = "\(formatter.string(from: countdown))"
         }
     }
 }
@@ -73,7 +85,7 @@ extension AzanViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AzanTableViewCell", for: indexPath) as! AzanTableViewCell
         cell.azanNameLabel.text = self.azanTimeArr?[indexPath.row].name
-        cell.AzanTimeLabel.text = self.azanTimes[indexPath.row]
+        cell.AzanTimeLabel.text = self.azanTimeArr?[indexPath.row].azanTime
         return cell
     }
 }

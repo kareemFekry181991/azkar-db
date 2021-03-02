@@ -44,7 +44,8 @@ extension azkarMoslemDetailsViewController : UITableViewDelegate , UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "azkarDetailsTableViewCell", for: indexPath) as! azkarDetailsTableViewCell
         cell.zekrLabel.text = self.azkarData?[indexPath.row].zekr ?? ""
         if self.azkarData?[indexPath.row].count == "" {
-            cell.sayingCountLabel.isHidden  = true
+//            cell.sayingCountLabel.isHidden  = true
+            cell.sayingCountLabel.text = "تكرار: " + "-"
         } else {
             cell.sayingCountLabel.isHidden  = false
             cell.sayingCountLabel.text = "تكرار: " + (self.azkarData?[indexPath.row].count ?? "")

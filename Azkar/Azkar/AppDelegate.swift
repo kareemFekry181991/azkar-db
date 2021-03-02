@@ -88,13 +88,19 @@ extension AppDelegate {
     func transNav() {
         // Override point for customization after application launch.
         // Sets background to a blank/empty image
+        let attributes = [NSAttributedString.Key.font: UIFont(name: "Cairo-SemiBold", size: 17) ?? UIFont() ]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         // Sets shadow (line below the bar) to a blank image
         UINavigationBar.appearance().shadowImage = UIImage()
         // Sets the translucent background color
         UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1194323525, green: 0.2938628793, blue: 0.4848378301, alpha: 1)
+        
         // Set translucent. (Default value is already true, so this can be removed if desired.)
         UINavigationBar.appearance().isTranslucent = true
+
 
     }
 }
@@ -114,3 +120,4 @@ extension AppDelegate:  UNUserNotificationCenterDelegate
     }
 
 }
+

@@ -27,9 +27,10 @@ class AzkarElMoslemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mapLat = 30.033333
+        self.mapLng = 31.233334
         // Do any additional setup after loading the view.
         self.getCurrentLocation()
-       
         let azkarData = HelperMethods.readLocalFile(forName: "azkar") ?? Data()
         self.parse(jsonData: azkarData)
     }
@@ -105,8 +106,8 @@ extension AzkarElMoslemViewController {
                         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
                         let date = cal.dateComponents([.year, .month, .day], from: Date())
                         let coordinates = Coordinates(latitude: self.mapLat , longitude: self.mapLng)
-                        var params = CalculationMethod.moonsightingCommittee.params
-                        params.madhab = .hanafi
+                        var params = CalculationMethod.egyptian.params
+                        params.madhab = .shafi
                         if let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) {
                             let formatter = DateFormatter()
                             formatter.timeStyle = .short
@@ -119,12 +120,14 @@ extension AzkarElMoslemViewController {
                             print("maghrib \(formatter.string(from: prayers.maghrib))")
                             print("isha \(formatter.string(from: prayers.isha))")
                             
-                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الفجر",time: formatter.string(from: prayers.fajr)  , identifier:  UUID().uuidString)
-                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الشروق",time: formatter.string(from: prayers.sunrise) , identifier: UUID().uuidString)
-                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة الظهر",time: formatter.string(from: prayers.dhuhr) , identifier:  UUID().uuidString)
-                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العصر" ,time: formatter.string(from: prayers.asr) , identifier: UUID().uuidString)
-                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة المغرب" ,time: formatter.string(from: prayers.maghrib) , identifier:  UUID().uuidString)
-                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العشاء" ,time: formatter.string(from: prayers.isha) , identifier:  UUID().uuidString)
+                            //                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العشاء" ,time: formatter.string(from: prayers.isha) , identifier:  UUID().uuidString)
+                            
+                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الفجر",time: formatter.string(from: prayers.fajr)  , identifier:  "azanFajr")
+                            self.scheduleNotification(notificationType: "حان الآن موعد صلاة الشروق",time: formatter.string(from: prayers.sunrise) , identifier: "azanShorok")
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة الظهر",time: formatter.string(from: prayers.dhuhr) , identifier:  "azanZohr")
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العصر" ,time: formatter.string(from: prayers.asr) , identifier:"azanAsr")
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة المغرب" ,time: formatter.string(from: prayers.maghrib) , identifier:  "azanMaghreb")
+                            self.scheduleNotification(notificationType:  "حان الآن موعد صلاة العشاء" ,time: formatter.string(from: prayers.isha) , identifier:  "azanIsha")
                         }
                         
                     } else if let error = error {
@@ -162,7 +165,7 @@ extension AzkarElMoslemViewController {
     
     func scheduleNotification(notificationType: String,time: String , identifier:String) {
         let center =  UNUserNotificationCenter.current()
-//        center.removeAllPendingNotificationRequests()
+        //        center.removeAllPendingNotificationRequests()
         let content = UNMutableNotificationContent()
         let startTime = time
         let fmt = DateFormatter()
@@ -235,6 +238,8 @@ extension AzkarElMoslemViewController {
         {
             self.mapLat = location.coordinate.latitude
             self.mapLng = location.coordinate.longitude
+            UserStatus.latitude = self.mapLat
+            UserStatus.longtitude = self.mapLng
             self.addNotification()
             // make map view animated
             self.locationManager.stopUpdatingLocation()
