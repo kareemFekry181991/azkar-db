@@ -293,10 +293,16 @@ public  class PDFViewController: UIViewController {
             self.quranView.isHidden = true
         })
     }
-    func goToSora(row:Int) {
+    func goToSoraWithCompletation(row:Int ,   completion: (() -> Void)) {
         self.collectionView.scrollToItem(at: IndexPath(row: row, section: 0) , at: .left , animated: true)
+        completion()
+    }
+    
+      func goToSora(row:Int) {
+        goToSoraWithCompletation(row: 0) {
+            self.collectionView.scrollToItem(at: IndexPath(row: row, section: 0) , at: .left , animated: true)
+        }
         self.fahresTableView.isHidden = true
-        self.collectionView.reloadData()
     }
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -456,6 +462,7 @@ extension PDFViewController: UITableViewDataSource , UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
         switch indexPath.row {
         case 0:
             self.goToSora(row: 0)

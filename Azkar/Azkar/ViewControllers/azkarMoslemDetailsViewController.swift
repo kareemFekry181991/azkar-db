@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum FontSize {
+    case minimum
+    case middle
+    case large
+}
 class azkarMoslemDetailsViewController: UIViewController {
     
     @IBOutlet weak var azkarNameLabel: UILabel!
@@ -18,8 +23,10 @@ class azkarMoslemDetailsViewController: UIViewController {
             
         }
     }
+    var fontSize : FontSize? = .minimum
     var azkarData: [AzkarData]? = []
     var azkarName = ""
+    var counter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +38,18 @@ class azkarMoslemDetailsViewController: UIViewController {
         self.azkarNameLabel.isHidden = true
     }
     
+    @IBAction func changeFontSizeClicked(_ sender: UIBarButtonItem) {
+        counter += 1
+        if counter == 1 {
+            self.fontSize = .minimum
+        } else if counter == 2 {
+            self.fontSize = .middle
+        } else {
+            self.fontSize = .large
+            counter = 0
+        }
+        self.azkarDetailsTableView.reloadData()
+    }
 }
 
 //MARK:- UITableViewDelegate
@@ -42,6 +61,24 @@ extension azkarMoslemDetailsViewController : UITableViewDelegate , UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "azkarDetailsTableViewCell", for: indexPath) as! azkarDetailsTableViewCell
+        
+        
+        switch self.fontSize {
+        case .minimum:
+            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 17)
+            break
+        case .middle :
+            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 20)
+            break
+        case .large:
+            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 22)
+        break
+        default:
+            break
+    }
+        
+        print("Fonttttt\(self.fontSize)")
+        
         cell.zekrLabel.text = self.azkarData?[indexPath.row].zekr ?? ""
         if self.azkarData?[indexPath.row].count == "" {
 //            cell.sayingCountLabel.isHidden  = true

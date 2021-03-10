@@ -55,5 +55,22 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fb</string>
+    </array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>whatsapp</string>
+    </array>
+
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.zeidex.zadmoslem</string>
+    </array>
+
+    
+    
 </dict>
 </plist>

@@ -11,19 +11,18 @@ import Adhan
 
 class QiblaViewController: UIViewController {
 
-    @IBOutlet weak var compassArrow: UIImageView!
+    
+    @IBOutlet weak var ivCompassBack: UIImageView!
+    @IBOutlet weak var ivCompassNeedle: UIImageView!
+    
+    var compassManager  : CompassDirectionManager!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        self.makeQiblaDirections()
-
+        compassManager =  CompassDirectionManager(dialerImageView: ivCompassBack, pointerImageView: ivCompassNeedle)
+        compassManager.initManager()
     }
-}
-
-extension QiblaViewController {
-    func makeQiblaDirections() {
-        let myCoordinates = Coordinates(latitude: UserStatus.latitude ?? 0, longitude: UserStatus.longtitude ?? 0)
-        let qibla = Qibla(coordinates: myCoordinates).direction
-        let radians = qibla * (.pi/180)
-        compassArrow.transform = CGAffineTransform(rotationAngle: CGFloat(radians))
+    @IBAction func dismissClicked(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true , completion: nil)
     }
 }

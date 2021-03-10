@@ -41,6 +41,7 @@
 		14504876259CFE1F00513820 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504874259CFE1E00513820 /* UserStatus.swift */; };
 		14504878259D125900513820 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14504877259D125900513820 /* mainTabBarViewController.swift */; };
 		146B3E0325C04357007B0711 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B3E0225C04357007B0711 /* HomeViewController.swift */; };
+		1477AA0F25F51EFA003A5467 /* OSQiblahDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477AA0E25F51EFA003A5467 /* OSQiblahDirection.swift */; };
 		1479693B25EEDB2B00786607 /* fahresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479693A25EEDB2B00786607 /* fahresTableViewCell.swift */; };
 		14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC125A320E400EB7B79 /* AzanViewController.swift */; };
 		14945CC425A3222000EB7B79 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14945CC325A3222000EB7B79 /* SettingsViewController.swift */; };
@@ -116,6 +117,7 @@
 		14504874259CFE1E00513820 /* UserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		14504877259D125900513820 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
 		146B3E0225C04357007B0711 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1477AA0E25F51EFA003A5467 /* OSQiblahDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSQiblahDirection.swift; sourceTree = "<group>"; };
 		1479693A25EEDB2B00786607 /* fahresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fahresTableViewCell.swift; sourceTree = "<group>"; };
 		14945CC125A320E400EB7B79 /* AzanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanViewController.swift; sourceTree = "<group>"; };
 		14945CC325A3222000EB7B79 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		145048432598C78100513820 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1477AA0E25F51EFA003A5467 /* OSQiblahDirection.swift */,
 				14DD492A25EB99E600474A92 /* quran_r.pdf */,
 				14C68A0E25A75C8E0054F2C8 /* azan.mp3 */,
 				14BA736E25A3A6530089902F /* azan.png */,
@@ -601,6 +604,7 @@
 				14945CC425A3222000EB7B79 /* SettingsViewController.swift in Sources */,
 				14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */,
 				14504870259CC5B700513820 /* azkarMoslemDetailsViewController.swift in Sources */,
+				1477AA0F25F51EFA003A5467 /* OSQiblahDirection.swift in Sources */,
 				1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

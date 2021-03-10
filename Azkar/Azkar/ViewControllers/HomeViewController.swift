@@ -69,12 +69,17 @@ class HomeViewController: UIViewController {
         let nav = UINavigationController(rootViewController: readerController)
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true , completion: nil)
-
     }
     @IBAction func allahAkbarClicked(_ sender: UIButton) {
         customizeBtn(selectedBtn: sender , firstBtn: sobhanBtn, secondBtn: elhamdBtn)
         tasbeehLabel.text = "الله اكبر"
         countLabel.text = "33"
+    }
+    @IBAction func elQiblaClicked(_ sender: UIButton) {
+        let qiblaViewController = self.storyboard?.instantiateViewController(identifier: "QiblaViewController") as! QiblaViewController
+        let nav = UINavigationController(rootViewController: qiblaViewController)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true , completion: nil)
     }
     @IBAction func counterClicked(_ sender: UIButton) {
         guard var counter = Int(countLabel.text ?? "") else { return }
