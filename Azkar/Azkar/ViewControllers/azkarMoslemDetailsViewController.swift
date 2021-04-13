@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 enum FontSize {
     case minimum
@@ -31,8 +32,17 @@ class azkarMoslemDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        HelperMethods.removeNavColor(navCon: self.navigationController ?? UINavigationController())
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        HelperMethods.reverseNavColor(nav: self.navigationController ?? UINavigationController())
+        Analytics.setScreenName("Azkar Details Screen", screenClass: "azkarMoslemDetailsViewController")
         self.title = azkarName
         self.azkarNameLabel.text = "أحسنت لقد انتهيت من \(azkarName)"
         self.azkarNameLabel.isHidden = true
@@ -50,6 +60,10 @@ class azkarMoslemDetailsViewController: UIViewController {
         }
         self.azkarDetailsTableView.reloadData()
     }
+    
+    @IBAction func backClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 //MARK:- UITableViewDelegate
@@ -65,13 +79,13 @@ extension azkarMoslemDetailsViewController : UITableViewDelegate , UITableViewDa
         
         switch self.fontSize {
         case .minimum:
-            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 17)
+            cell.zekrLabel.font =   UIFont(name: "ElMessiri-SemiBold", size: 16)
             break
         case .middle :
-            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 20)
+            cell.zekrLabel.font =   UIFont(name: "ElMessiri-SemiBold", size: 18)
             break
         case .large:
-            cell.zekrLabel.font =   UIFont(name: "Cairo-SemiBold", size: 22)
+            cell.zekrLabel.font =   UIFont(name: "ElMessiri-SemiBold", size: 20)
         break
         default:
             break
@@ -85,7 +99,7 @@ extension azkarMoslemDetailsViewController : UITableViewDelegate , UITableViewDa
             cell.sayingCountLabel.text = "تكرار: " + "-"
         } else {
             cell.sayingCountLabel.isHidden  = false
-            cell.sayingCountLabel.text = "تكرار: " + (self.azkarData?[indexPath.row].count ?? "")
+            cell.sayingCountLabel.text = "التكرار   " + (self.azkarData?[indexPath.row].count ?? "")
         }
         return cell
     }

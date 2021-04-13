@@ -10,12 +10,14 @@ import UIKit
 
 class azkarDetailsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var azakarView: UIView!
     @IBOutlet weak var zekrLabel: UILabel!
     @IBOutlet weak var sayingCountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.azakarView.shadow()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

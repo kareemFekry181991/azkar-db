@@ -1,5 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-Azkar/Pods-Azkar-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Adhan/Adhan.framework
+${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework
+${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework
 ${BUILT_PRODUCTS_DIR}/WWCalendarTimeSelector/WWCalendarTimeSelector.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework

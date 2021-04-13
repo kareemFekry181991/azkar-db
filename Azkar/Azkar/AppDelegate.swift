@@ -16,11 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.transNav()
+//        self.transNav()
+        setupFirebase()
         return true
     }
-    
-    
     
     
     func application(
@@ -30,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 
-    }
+//    }
     
     
 
@@ -91,33 +90,33 @@ extension AppDelegate {
         let attributes = [NSAttributedString.Key.font: UIFont(name: "Cairo-SemiBold", size: 17) ?? UIFont() ]
         UINavigationBar.appearance().titleTextAttributes = attributes
 
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        // Sets shadow (line below the bar) to a blank image
-        UINavigationBar.appearance().shadowImage = UIImage()
-        // Sets the translucent background color
-        UINavigationBar.appearance().backgroundColor = .clear
-        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1194323525, green: 0.2938628793, blue: 0.4848378301, alpha: 1)
-        
-        // Set translucent. (Default value is already true, so this can be removed if desired.)
-        UINavigationBar.appearance().isTranslucent = true
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+//        // Sets shadow (line below the bar) to a blank image
+//        UINavigationBar.appearance().shadowImage = UIImage()
+//        // Sets the translucent background color
+//        UINavigationBar.appearance().backgroundColor = .clear
+//        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+//        
+//        // Set translucent. (Default value is already true, so this can be removed if desired.)
+//        UINavigationBar.appearance().isTranslucent = true
 
 
     }
 }
 
-extension AppDelegate:  UNUserNotificationCenterDelegate
-{
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
-    {
-        print("GO IN HERE")
-        completionHandler(.alert)
-    }
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
-    {
-
-    }
-
-}
-
+//extension AppDelegate:  UNUserNotificationCenterDelegate
+//{
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+//    {
+//        print("GO IN HERE")
+//        completionHandler(.alert)
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
+//    {
+//
+//    }
+//
+//}
+//

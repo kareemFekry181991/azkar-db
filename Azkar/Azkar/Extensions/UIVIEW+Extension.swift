@@ -304,7 +304,7 @@ extension UIView {
         self.layer.mask = circleShape
 
     }
-    func shadow(opacity: Float = 0.7, radius: Int = 4, offset: CGSize = CGSize.zero, masks: Bool = false) {
+    func shadow(opacity: Float = 0.7, radius: Int = 10, offset: CGSize = CGSize.zero, masks: Bool = false) {
         self.layer.shadowColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.18).cgColor
         self.layer.shadowOffset = offset
         self.layer.shadowOpacity = opacity

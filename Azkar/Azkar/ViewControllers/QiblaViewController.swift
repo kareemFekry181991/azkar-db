@@ -8,6 +8,7 @@
 
 import UIKit
 import Adhan
+import FirebaseAnalytics
 
 class QiblaViewController: UIViewController {
 
@@ -22,6 +23,12 @@ class QiblaViewController: UIViewController {
         compassManager =  CompassDirectionManager(dialerImageView: ivCompassBack, pointerImageView: ivCompassNeedle)
         compassManager.initManager()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Analytics.setScreenName("Qibla Screen", screenClass: "QiblaViewController")
+    }
+
+
     @IBAction func dismissClicked(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true , completion: nil)
     }

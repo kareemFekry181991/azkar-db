@@ -1,32 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iqd-FA-oQ4">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iqd-FA-oQ4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="el_messiri_medium_d.ttf">
-            <string>ElMessiri-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="9RY-nl-oTK">
             <objects>
-                <viewController restorationIdentifier="PDFViewController" storyboardIdentifier="PDFViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="iqd-FA-oQ4" customClass="PDFViewController" customModule="PDFReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PDFViewController" storyboardIdentifier="PDFViewController" automaticallyAdjustsScrollViewInsets="NO" id="iqd-FA-oQ4" customClass="PDFViewController" customModule="PDFReader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5MZ-3M-tJA"/>
                         <viewControllerLayoutGuide type="bottom" id="bKE-eF-3Dz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NlH-gX-4Vd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xgz-br-S4l">
-                                <rect key="frame" x="-21" y="-81" width="450" height="977"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="UBd-Nd-OUA">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -40,11 +32,8 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spp-zz-ZXW">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-Eg-xUH">
-                                        <rect key="frame" x="7" y="0.0" width="400" height="44"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="AiN-T1-0xx"/>
                                         </constraints>
@@ -61,101 +50,22 @@
                                     <constraint firstAttribute="bottom" secondItem="xpt-Eg-xUH" secondAttribute="bottom" id="u5r-8L-Ro4"/>
                                 </constraints>
                             </view>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q7a-ja-RTa">
-                                <rect key="frame" x="0.0" y="88" width="129" height="401"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="401" id="NrH-11-kR5"/>
-                                    <constraint firstAttribute="width" constant="129" id="y6M-pg-OK3"/>
-                                </constraints>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="e44-GB-JQe">
-                                    <rect key="frame" x="0.0" y="78.5" width="129" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fahresTableViewCell" id="kmr-vq-Z3u" customClass="fahresTableViewCell" customModule="PDFReader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="129" height="22.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kmr-vq-Z3u" id="MKY-h9-vrv">
-                                            <rect key="frame" x="0.0" y="0.0" width="129" height="22.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHu-Qf-F1h">
-                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="22.5"/>
-                                                    <fontDescription key="fontDescription" name="ElMessiri-Medium" family="El Messiri" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="uHu-Qf-F1h" secondAttribute="bottom" id="0br-YS-Fnz"/>
-                                                <constraint firstItem="uHu-Qf-F1h" firstAttribute="top" secondItem="MKY-h9-vrv" secondAttribute="top" id="Ihg-9t-OtT"/>
-                                                <constraint firstItem="uHu-Qf-F1h" firstAttribute="leading" secondItem="MKY-h9-vrv" secondAttribute="leading" id="SZ4-4R-a83"/>
-                                                <constraint firstAttribute="trailing" secondItem="uHu-Qf-F1h" secondAttribute="trailing" id="TQF-dQ-kF4"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="fahresLabel" destination="uHu-Qf-F1h" id="Er6-OJ-XEm"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-Ty-D7W">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuranIconn" translatesAutoresizingMaskIntoConstraints="NO" id="a5G-d3-j2Y">
-                                        <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="H1I-ul-pbq"/>
-                                            <constraint firstAttribute="width" constant="200" id="dsW-cS-DQw"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="a5G-d3-j2Y" firstAttribute="centerY" secondItem="hbh-Ty-D7W" secondAttribute="centerY" id="GtL-9Z-E50"/>
-                                    <constraint firstItem="a5G-d3-j2Y" firstAttribute="centerX" secondItem="hbh-Ty-D7W" secondAttribute="centerX" id="oO3-Mo-ZSl"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xgz-br-S4l" firstAttribute="top" secondItem="5MZ-3M-tJA" secondAttribute="bottom" constant="-169" id="5Tw-gE-qng"/>
                             <constraint firstItem="spp-zz-ZXW" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="5s1-FI-xLW"/>
                             <constraint firstItem="bKE-eF-3Dz" firstAttribute="top" secondItem="spp-zz-ZXW" secondAttribute="bottom" id="8cX-bN-oYQ"/>
-                            <constraint firstAttribute="trailing" secondItem="xgz-br-S4l" secondAttribute="trailing" constant="-15" id="Epe-MY-55K"/>
-                            <constraint firstAttribute="bottom" secondItem="hbh-Ty-D7W" secondAttribute="bottom" id="FAq-J4-kFQ"/>
-                            <constraint firstItem="hbh-Ty-D7W" firstAttribute="top" secondItem="NlH-gX-4Vd" secondAttribute="top" id="IE2-dt-Ge1"/>
-                            <constraint firstItem="hbh-Ty-D7W" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="Ktb-dM-dFU"/>
-                            <constraint firstItem="q7a-ja-RTa" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="Xw6-Ko-YCB"/>
-                            <constraint firstItem="q7a-ja-RTa" firstAttribute="top" secondItem="5MZ-3M-tJA" secondAttribute="bottom" id="Zjj-E5-wQ9"/>
-                            <constraint firstItem="bKE-eF-3Dz" firstAttribute="top" secondItem="xgz-br-S4l" secondAttribute="bottom" constant="-34" id="f40-Qg-Nwq"/>
-                            <constraint firstItem="xgz-br-S4l" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" constant="-21" id="hkr-hU-aHw"/>
+                            <constraint firstAttribute="trailing" secondItem="xgz-br-S4l" secondAttribute="trailing" id="Epe-MY-55K"/>
+                            <constraint firstItem="xgz-br-S4l" firstAttribute="top" secondItem="NlH-gX-4Vd" secondAttribute="top" id="HXq-iD-jkO"/>
+                            <constraint firstItem="bKE-eF-3Dz" firstAttribute="top" secondItem="xgz-br-S4l" secondAttribute="bottom" id="f40-Qg-Nwq"/>
+                            <constraint firstItem="xgz-br-S4l" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="hkr-hU-aHw"/>
                             <constraint firstAttribute="trailing" secondItem="spp-zz-ZXW" secondAttribute="trailing" id="kwc-Rl-No8"/>
-                            <constraint firstAttribute="trailing" secondItem="hbh-Ty-D7W" secondAttribute="trailing" id="zp2-xu-x9t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kYU-BQ-9om">
-                        <barButtonItem key="leftBarButtonItem" title="الفهرس" id="SKe-mA-FbH">
-                            <color key="tintColor" red="0.2092541158" green="0.41984707119999998" blue="0.61095803979999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="fahresClicked:" destination="iqd-FA-oQ4" id="ddN-Ab-J55"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="إغلاق " id="7YD-RX-eVd">
-                            <color key="tintColor" red="0.2092541158" green="0.41984707119999998" blue="0.61095803979999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="dismissView:" destination="iqd-FA-oQ4" id="fPV-5z-RBu"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kYU-BQ-9om"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="xgz-br-S4l" id="4tX-Ot-xgt"/>
-                        <outlet property="fahresTableView" destination="q7a-ja-RTa" id="0SZ-cB-aqx"/>
-                        <outlet property="quranImageView" destination="a5G-d3-j2Y" id="QkA-op-iDw"/>
-                        <outlet property="quranView" destination="hbh-Ty-D7W" id="IGI-jK-JQo"/>
                         <outlet property="thumbnailCollectionControllerBottom" destination="8cX-bN-oYQ" id="izz-Un-BB6"/>
                         <outlet property="thumbnailCollectionControllerHeight" destination="pqu-BB-m1z" id="0NE-JL-KJc"/>
                         <outlet property="thumbnailCollectionControllerWidth" destination="AiN-T1-0xx" id="ccV-LP-TiX"/>
@@ -163,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olj-jR-VgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789.85507246376812" y="368.97321428571428"/>
+            <point key="canvasLocation" x="1172" y="444"/>
         </scene>
         <!--Thumbnail Collection View Controller-->
         <scene sceneID="a0d-VQ-36h">
@@ -172,7 +82,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pAs-g9-8qc">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="10" id="d5S-zN-jGG">
                             <size key="itemSize" width="60" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -187,9 +97,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqO-mN-48T">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqO-mN-48T"/>
                                     </subviews>
                                 </view>
                                 <constraints>
@@ -214,10 +122,4 @@
             <point key="canvasLocation" x="1172" y="880"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="QuranIconn" width="274.5" height="274.5"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

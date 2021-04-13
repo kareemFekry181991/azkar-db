@@ -176,15 +176,21 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Adhan/Adhan.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WWCalendarTimeSelector/WWCalendarTimeSelector.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Adhan/Adhan.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WWCalendarTimeSelector/WWCalendarTimeSelector.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

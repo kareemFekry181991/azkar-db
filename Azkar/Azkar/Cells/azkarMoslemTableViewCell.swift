@@ -10,10 +10,12 @@ import UIKit
 
 class azkarMoslemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var azkarView: UIView!
     @IBOutlet weak var TitleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        azkarView.shadow()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

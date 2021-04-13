@@ -8,6 +8,8 @@
 
 import UIKit
 import PDFReader
+import FirebaseAnalytics
+
 class HomeViewController: UIViewController {
     
     //MARK:-  @IBOutlet
@@ -25,12 +27,14 @@ class HomeViewController: UIViewController {
     //MARK:- ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+       
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        Analytics.setScreenName("Sebha Screen", screenClass: "HomeViewController")
         customizeBtn(selectedBtn: sobhanBtn , firstBtn: elhamdBtn, secondBtn: allahAkbarBtn)
+        HelperMethods.removeNavColor(navCon: self.navigationController ?? UINavigationController())
+
     }
     
     //MARK:- @IBAction
@@ -63,12 +67,27 @@ class HomeViewController: UIViewController {
         countLabel.text = "33"
     }
     @IBAction func QuraanKareemClicked(_ sender: UIButton) {
-        let documentFileURL = Bundle.main.url(forResource: "quran_r", withExtension: "pdf")!
-        let document = PDFDocument(url: documentFileURL)!
-        let readerController = PDFViewController.createNew(with: document)
-        let nav = UINavigationController(rootViewController: readerController)
+        let scene = self.storyboard?.instantiateViewController(identifier: "QuraanKareemViewController") as! QuraanKareemViewController
+        let nav = UINavigationController(rootViewController: scene)
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true , completion: nil)
+//        if let path = Bundle.main.path(forResource: "myfile", ofType: "pdf") {
+//            let url = URL(fileURLWithPath: path)
+//            if let pdfDocument = PDFDocument(url: url) {
+//                pdfView.autoScales = true
+//                pdfView.displayMode = .singlePage
+//                pdfView.displayDirection = .horizontal
+//                pdfView.usePageViewController(true, withViewOptions: [UIPageViewControllerOptionInterPageSpacingKey: 5])
+//                pdfView.document = pdfDocument
+//            }
+//        }
+
+//        let documentFileURL = Bundle.main.url(forResource: "quran_new", withExtension: "pdf")!
+//        let document = PDFDocument(url: documentFileURL)!
+//        let readerController = PDFViewController.createNew(with: document)
+//        let nav = UINavigationController(rootViewController: readerController)
+//        nav.modalPresentationStyle = .fullScreen
+//        self.present(nav, animated: true , completion: nil)
     }
     @IBAction func allahAkbarClicked(_ sender: UIButton) {
         customizeBtn(selectedBtn: sender , firstBtn: sobhanBtn, secondBtn: elhamdBtn)

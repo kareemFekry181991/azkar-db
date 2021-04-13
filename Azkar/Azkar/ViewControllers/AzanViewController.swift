@@ -8,6 +8,7 @@
 
 import UIKit
 import Adhan
+import FirebaseAnalytics
 
 struct AzanTimes {
     var name : String?
@@ -62,7 +63,10 @@ class AzanViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         timeCountDownLabel.text = ""
+        Analytics.setScreenName("Azan Screen", screenClass: "AzanViewController")
+
     }
+
     func countDownString(for date: Date) -> String {
            let calendar = Calendar(identifier: .gregorian)
            let components = calendar

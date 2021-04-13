@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class AddAzkarViewController: UIViewController {
     @IBOutlet weak var azkaryTableView: UITableView! {
@@ -28,6 +29,12 @@ class AddAzkarViewController: UIViewController {
             self.messageLabel.isHidden = false
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Analytics.setScreenName("Add Azkar Screen", screenClass: "AddAzkarViewController")
+    }
+
+
     //MARK:-    @IBAction
     @IBAction func AddClicked(_ sender: UIBarButtonItem) {
         self.azkaryTextView.layer.borderColor = UIColor.clear.cgColor

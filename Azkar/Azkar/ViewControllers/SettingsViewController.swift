@@ -9,7 +9,7 @@
 import UIKit
 import Adhan
 import UserNotifications
-
+import FirebaseAnalytics
 
 class SettingsViewController: UIViewController {
 
@@ -21,6 +21,12 @@ class SettingsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Analytics.setScreenName("Settings Screen", screenClass: "SettingsViewController")
+    }
+
+
     @IBAction func shareLinkWithFaceBook(_ sender: UIButton) {
         if let name = URL(string: self.appLink), !name.absoluteString.isEmpty {
           let objectsToShare = [name]

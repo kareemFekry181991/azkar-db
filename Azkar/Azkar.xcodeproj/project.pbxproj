@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140A0553260F902400F556F2 /* FahresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A0552260F902400F556F2 /* FahresViewController.swift */; };
+		140C3C5F2608F8DF00EA7110 /* azan3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 140C3C5E2608F8DF00EA7110 /* azan3.mp3 */; };
+		140C3C6426093B6500EA7110 /* ElMessiri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140C3C6326093B5700EA7110 /* ElMessiri-SemiBold.ttf */; };
 		142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */; };
+		142C03AA2607878500907B25 /* quran_new.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 142C03A92607878500907B25 /* quran_new.pdf */; };
 		143FF1FE25C6DEC30026E0E2 /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */; };
 		145048112598BEFF00513820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048102598BEFF00513820 /* AppDelegate.swift */; };
 		145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145048142598BEFF00513820 /* AzkarElMoslemViewController.swift */; };
@@ -51,6 +55,10 @@
 		14C68A0F25A75C8E0054F2C8 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14C68A0E25A75C8E0054F2C8 /* azan.mp3 */; };
 		14DD492B25EB99E600474A92 /* quran_r.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 14DD492A25EB99E600474A92 /* quran_r.pdf */; };
 		14DD493025EB9AF300474A92 /* QuraanKareemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */; };
+		14EF7A272608909C0047FD78 /* azan2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14EF7A262608909C0047FD78 /* azan2.mp3 */; };
+		14EF7A322608E8A80047FD78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14EF7A312608E8A80047FD78 /* GoogleService-Info.plist */; };
+		14EF7A392608EA1D0047FD78 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EF7A372608EA1C0047FD78 /* AppDelegateExtension.swift */; };
+		14EF7A3A2608EA1D0047FD78 /* NotificationSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EF7A382608EA1C0047FD78 /* NotificationSetup.swift */; };
 		14FC095525D16D9600199FA3 /* el_messiri_medium_d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */; };
 		64E31DE90B76C014CA888D5F /* Pods_AzkarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37947560F7A16DA07B19FFA /* Pods_AzkarTests.framework */; };
 		841830D3B6C273DE46B47E44 /* Pods_AzkarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED17AB12883D99CA6AA524F /* Pods_AzkarUITests.framework */; };
@@ -75,8 +83,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140A0552260F902400F556F2 /* FahresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahresViewController.swift; sourceTree = "<group>"; };
+		140C3C5E2608F8DF00EA7110 /* azan3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = azan3.mp3; path = ../../../../../../../../Users/m/Downloads/azan3.mp3; sourceTree = "<group>"; };
+		140C3C6326093B5700EA7110 /* ElMessiri-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ElMessiri-SemiBold.ttf"; sourceTree = "<group>"; };
 		142360D525A9F1DB00F9D0D2 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		142854EEB5A5971F4CC367B0 /* Pods-AzkarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.release.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.release.xcconfig"; sourceTree = "<group>"; };
+		142C03A92607878500907B25 /* quran_new.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quran_new.pdf; sourceTree = "<group>"; };
 		143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		144C2C6C25A4817100C9E513 /* Azkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Azkar.entitlements; sourceTree = "<group>"; };
 		1450480D2598BEFF00513820 /* Azkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +139,10 @@
 		14C68A0E25A75C8E0054F2C8 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
 		14DD492A25EB99E600474A92 /* quran_r.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quran_r.pdf; sourceTree = "<group>"; };
 		14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuraanKareemViewController.swift; sourceTree = "<group>"; };
+		14EF7A262608909C0047FD78 /* azan2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan2.mp3; sourceTree = "<group>"; };
+		14EF7A312608E8A80047FD78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14EF7A372608EA1C0047FD78 /* AppDelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		14EF7A382608EA1C0047FD78 /* NotificationSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetup.swift; sourceTree = "<group>"; };
 		14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = el_messiri_medium_d.ttf; sourceTree = "<group>"; };
 		203544EAF4486364FD8FB3FB /* Pods-AzkarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzkarTests.debug.xcconfig"; path = "Target Support Files/Pods-AzkarTests/Pods-AzkarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DEEFCC7B965249B530A574A /* Pods_Azkar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Azkar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				144C2C6C25A4817100C9E513 /* Azkar.entitlements */,
+				14EF7A312608E8A80047FD78 /* GoogleService-Info.plist */,
 				1450484D259A7A3300513820 /* StoredData.plist */,
 				142360D425A9F1DB00F9D0D2 /* LocationHelper */,
 				14504855259CB76700513820 /* Extensions */,
@@ -250,7 +267,10 @@
 			isa = PBXGroup;
 			children = (
 				1477AA0E25F51EFA003A5467 /* OSQiblahDirection.swift */,
+				142C03A92607878500907B25 /* quran_new.pdf */,
 				14DD492A25EB99E600474A92 /* quran_r.pdf */,
+				14EF7A262608909C0047FD78 /* azan2.mp3 */,
+				140C3C5E2608F8DF00EA7110 /* azan3.mp3 */,
 				14C68A0E25A75C8E0054F2C8 /* azan.mp3 */,
 				14BA736E25A3A6530089902F /* azan.png */,
 				14504858259CB9C500513820 /* FONT */,
@@ -262,6 +282,7 @@
 		145048462598C81500513820 /* HelperMehods */ = {
 			isa = PBXGroup;
 			children = (
+				14EF7A362608EA1C0047FD78 /* Notification */,
 				14504873259CFE1E00513820 /* Constants.swift */,
 				14504874259CFE1E00513820 /* UserStatus.swift */,
 				145048472598C84C00513820 /* HelperMethods.swift */,
@@ -290,6 +311,7 @@
 				143FF1FD25C6DEC30026E0E2 /* QiblaViewController.swift */,
 				14ADEDB925D6C87B0072417F /* azkarSettingsViewController.swift */,
 				14DD492F25EB9AF300474A92 /* QuraanKareemViewController.swift */,
+				140A0552260F902400F556F2 /* FahresViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -317,6 +339,7 @@
 		14504858259CB9C500513820 /* FONT */ = {
 			isa = PBXGroup;
 			children = (
+				140C3C6326093B5700EA7110 /* ElMessiri-SemiBold.ttf */,
 				14FC095125D1685C00199FA3 /* el_messiri_medium_d.ttf */,
 				14504859259CB9C500513820 /* Ubuntu-Medium.ttf */,
 				1450485A259CB9C500513820 /* Cairo-SemiBold.ttf */,
@@ -330,6 +353,15 @@
 				14504862259CB9C500513820 /* Ubuntu-Light.ttf */,
 			);
 			path = FONT;
+			sourceTree = "<group>";
+		};
+		14EF7A362608EA1C0047FD78 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				14EF7A372608EA1C0047FD78 /* AppDelegateExtension.swift */,
+				14EF7A382608EA1C0047FD78 /* NotificationSetup.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		37350C39A7112162AEAFD488 /* Pods */ = {
@@ -454,19 +486,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				14504867259CB9C500513820 /* Ubuntu-Bold.ttf in Resources */,
+				14EF7A272608909C0047FD78 /* azan2.mp3 in Resources */,
 				14504865259CB9C500513820 /* Ubuntu-LightItalic.ttf in Resources */,
 				14C68A0F25A75C8E0054F2C8 /* azan.mp3 in Resources */,
 				14504869259CB9C500513820 /* Ubuntu-MediumItalic.ttf in Resources */,
 				1450486B259CB9C500513820 /* Ubuntu-Italic.ttf in Resources */,
+				142C03AA2607878500907B25 /* quran_new.pdf in Resources */,
 				1450484E259A7A3300513820 /* StoredData.plist in Resources */,
 				14BA736F25A3A6530089902F /* azan.png in Resources */,
 				145048202598BF0100513820 /* LaunchScreen.storyboard in Resources */,
 				14504863259CB9C500513820 /* Ubuntu-Medium.ttf in Resources */,
+				140C3C6426093B6500EA7110 /* ElMessiri-SemiBold.ttf in Resources */,
 				1450486C259CB9C500513820 /* Ubuntu-Light.ttf in Resources */,
+				140C3C5F2608F8DF00EA7110 /* azan3.mp3 in Resources */,
 				1450481D2598BF0100513820 /* Assets.xcassets in Resources */,
 				14504868259CB9C500513820 /* Cairo-Regular.ttf in Resources */,
 				14DD492B25EB99E600474A92 /* quran_r.pdf in Resources */,
 				145048182598BEFF00513820 /* Main.storyboard in Resources */,
+				14EF7A322608E8A80047FD78 /* GoogleService-Info.plist in Resources */,
 				1450486A259CB9C500513820 /* Ubuntu-BoldItalic.ttf in Resources */,
 				14504866259CB9C500513820 /* Ubuntu-Regular.ttf in Resources */,
 				145048452598C79600513820 /* azkar.json in Resources */,
@@ -584,6 +621,7 @@
 			files = (
 				14504876259CFE1F00513820 /* UserStatus.swift in Sources */,
 				14504872259CC86F00513820 /* azkarDetailsTableViewCell.swift in Sources */,
+				140A0553260F902400F556F2 /* FahresViewController.swift in Sources */,
 				146B3E0325C04357007B0711 /* HomeViewController.swift in Sources */,
 				14504878259D125900513820 /* mainTabBarViewController.swift in Sources */,
 				14ADEDBA25D6C87B0072417F /* azkarSettingsViewController.swift in Sources */,
@@ -594,6 +632,7 @@
 				142360D625A9F1DB00F9D0D2 /* LocationHelper.swift in Sources */,
 				143FF1FE25C6DEC30026E0E2 /* QiblaViewController.swift in Sources */,
 				14DD493025EB9AF300474A92 /* QuraanKareemViewController.swift in Sources */,
+				14EF7A3A2608EA1D0047FD78 /* NotificationSetup.swift in Sources */,
 				14504854259A7CA000513820 /* AzkaryTableViewCell.swift in Sources */,
 				145048152598BEFF00513820 /* AzkarElMoslemViewController.swift in Sources */,
 				145048112598BEFF00513820 /* AppDelegate.swift in Sources */,
@@ -605,6 +644,7 @@
 				14945CC225A320E400EB7B79 /* AzanViewController.swift in Sources */,
 				14504870259CC5B700513820 /* azkarMoslemDetailsViewController.swift in Sources */,
 				1477AA0F25F51EFA003A5467 /* OSQiblahDirection.swift in Sources */,
+				14EF7A392608EA1D0047FD78 /* AppDelegateExtension.swift in Sources */,
 				1450481B2598BEFF00513820 /* Azkar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,12 +822,14 @@
 				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.zadmoslem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -804,12 +846,14 @@
 				CODE_SIGN_ENTITLEMENTS = Azkar/Azkar.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J27VTRWJ7B;
 				INFOPLIST_FILE = Azkar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeidex.zadmoslem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

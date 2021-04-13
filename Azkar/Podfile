@@ -10,6 +10,10 @@ target 'Azkar' do
   pod 'Adhan'
   pod 'WWCalendarTimeSelector'
   pod 'PDFReader'
+  pod 'Firebase/Messaging' , '~> 4.3.0'
+  pod 'Firebase/Analytics' , '~> 4.3.0'
+  pod 'GoogleAnalytics'
+
   
   target 'AzkarTests' do
     inherit! :search_paths

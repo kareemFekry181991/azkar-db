@@ -9,7 +9,7 @@
 import UIKit
 import Adhan
 import CoreLocation
-
+import FirebaseAnalytics
 
 class AzkarElMoslemViewController: UIViewController {
     
@@ -24,7 +24,6 @@ class AzkarElMoslemViewController: UIViewController {
     var locationManager = CLLocationManager()
     var mapLat = CLLocationDegrees()
     var mapLng = CLLocationDegrees()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapLat = 30.033333
@@ -34,6 +33,12 @@ class AzkarElMoslemViewController: UIViewController {
         let azkarData = HelperMethods.readLocalFile(forName: "azkar") ?? Data()
         self.parse(jsonData: azkarData)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        HelperMethods.removeNavColor(navCon: self.navigationController ?? UINavigationController())
+        Analytics.setScreenName("Azkar Screen", screenClass: "AzkarElMoslemViewController")
+    }
+
     func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode(AzkarModel.self,
@@ -72,24 +77,7 @@ extension AzkarElMoslemViewController : UITableViewDelegate , UITableViewDataSou
 
 //MARK:- Schedule Prayer times
 extension AzkarElMoslemViewController {
-    func schedulePrayerTimes() {
-        let center =  UNUserNotificationCenter.current()
-        center.removeAllPendingNotificationRequests()
-        let content = UNMutableNotificationContent()
-        content.title = "الآذان"
-        content.subtitle = "It looks hungry"
-        content.body = "Some message"
-        //        content.sound = UNNotificationSound.default
-        let soundName = UNNotificationSoundName("azan.mp3")
-        content.sound = UNNotificationSound(named: soundName)
-        // show this notification five seconds from now
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 , repeats: true)
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        print(request)
-        // add our notification request
-        center.add(request)
-    }
+    
     func addNotification() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
             (granted, error) in
@@ -140,26 +128,6 @@ extension AzkarElMoslemViewController {
             }
         }
     }
-    
-    func schedulePrayers(notificationTitle: String , time: String , identifier:String) {
-        let center =  UNUserNotificationCenter.current()
-        //        center.removeAllPendingNotificationRequests()
-        let content = UNMutableNotificationContent()
-        content.title = notificationTitle
-        content.subtitle = "It looks hungry"
-        content.body = "Some message"
-        //        content.sound = UNNotificationSound.default
-        let soundName = UNNotificationSoundName("azan.mp3")
-        content.sound = UNNotificationSound(named: soundName)
-        // show this notification five seconds from now
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 , repeats: true)
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        print(request)
-        // add our notification request
-        center.add(request)
-        
-    }
 }
 extension AzkarElMoslemViewController {
     
@@ -173,7 +141,7 @@ extension AzkarElMoslemViewController {
         let dateFrom = fmt.date(from: startTime)!
         content.title = notificationType
         content.body = "الله اكبر الله اكبر لا اله الا الله"
-        let soundName = UNNotificationSoundName("azan.mp3")
+        let soundName = UNNotificationSoundName("azan2.mp3")
         content.sound = UNNotificationSound(named: soundName)
         //        let date = Date(timeIntervalSinceNow: 3600)
         let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: dateFrom)

@@ -20,6 +20,47 @@ struct UserStatus {
         }
     }
     
+    static var deviceToken: String? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.deviceToken)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.string(forKey: Constants.deviceToken)
+        }
+    }
+    static var firebaseToken: String? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.firebaseToken)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.string(forKey: Constants.firebaseToken)
+        }
+    }
+    
+    static var quranPage: Int? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.quranPage)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.integer(forKey: Constants.quranPage)
+        }
+    }
+
+    static var markedQuranPage: Int? {
+        set{
+            UserDefaults.standard.set(newValue, forKey: Constants.markedQuranPage)
+            UserDefaults.standard.synchronize()
+        }
+        get{
+            return UserDefaults.standard.integer(forKey: Constants.markedQuranPage)
+        }
+    }
+
+    
+    
     
     static var latitude:Double? {
         set{
